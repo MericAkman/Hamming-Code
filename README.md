@@ -1,6 +1,6 @@
 # Hamming Code Simülatörü
 
-Bu proje, bilgisayar mimarisinde bellek hatalarını tespit etmek ve onarmak için kullanılan **Hamming Error-Correcting Code** (Hata Düzeltme Kodu) algoritmasını görselleştiren web tabanlı bir simülasyondur. Herhangi bir dış kütüphane kullanılmadan saf (native) JavaScript, HTML ve CSS ile geliştirilmiştir.
+Bu proje, bilgisayar mimarisinde bellek hatalarını tespit etmek ve onarmak için kullanılan **Hamming Error-Correcting Code**  algoritmasını görselleştiren web tabanlı bir simülasyondur. JavaScript, HTML ve CSS ile geliştirilmiştir.
 
 ## Özellikler
 
@@ -20,3 +20,8 @@ Simülatörü çalıştırmak için tek yapmanız gereken `index.html` dosyasın
 * HTML5
 * CSS3 (Flexbox Layout)
 * Vanilla JavaScript
+
+## Video Linki
+
+[Youtube Linki](https://youtu.be/nyAsWDhaxsA)
+
