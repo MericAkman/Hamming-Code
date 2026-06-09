@@ -10,10 +10,16 @@ Bu proje, bilgisayar mimarisinde bellek hatalarını tespit etmek ve onarmak iç
 * **SEC (Single Error Correction):** Tek bitlik hatalar; Compare modülünde XOR mantığıyla hesaplanan "Sendrom Kelimesi" ile tespit edilir ve Corrector modülü tarafından orijinal haline döndürülür.
 * **Limit Kontrolü (Aliasing Koruması):** Standart Hamming kodunun matematiksel sınırlarını göstermek amacıyla, bellekte aynı anda birden fazla hata oluştuğunda sistem hatalı onarım yapmak yerine işlemi durdurarak kullanıcıyı uyarır.
 
-## Kurulum ve Kullanım
+## Ekran Görüntüleri
 
-Proje herhangi bir sunucu kurulumu, paket yöneticisi veya derleyici gerektirmez. 
-Simülatörü çalıştırmak için tek yapmanız gereken `index.html` dosyasını modern bir web tarayıcısında açmaktır.
+**8-Bit Veri Girişi ve Hata Düzeltme / Çoklu Hata Uyarısı:**
+![8-Bit Simülasyonu](ekran_resmi1.png)
+
+**16-Bit Veri Girişi ve Bellek Dizilimi:**
+![16-Bit Simülasyonu](ekran_resmi2.png)
+
+**32-Bit Veri Girişi ve Dinamik Ölçeklenebilirlik:**
+![32-Bit Simülasyonu](ekran_resmi3.png)
 
 ## Teknolojiler
 
