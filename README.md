@@ -1,28 +1,22 @@
-# SOUL&BODY
+# Hamming Code Simülatörü
 
+Bu proje, bilgisayar mimarisinde bellek hatalarını tespit etmek ve onarmak için kullanılan **Hamming Error-Correcting Code** (Hata Düzeltme Kodu) algoritmasını görselleştiren web tabanlı bir simülasyondur. Herhangi bir dış kütüphane kullanılmadan saf (native) JavaScript, HTML ve CSS ile geliştirilmiştir.
 
-## 📸 Ekran Görüntüleri
+## Özellikler
 
-![ekran1](Proje/BG/start-bg.png)
-![ekran2](Proje/BG/final-bg.png)
+* **Dinamik Ölçeklenebilirlik:** 8, 16 ve 32 bitlik veri girişlerini destekler, gerekli parite (kontrol) bitlerini formüle uygun olarak otomatik hesaplar.
+* **Donanım Mimarisi Standartları:** Bellek dizilimi, en az anlamlı bitin (LSB) sağda yer aldığı sağdan sola indeksleme mantığıyla tasarlanmıştır. Veri bitleri (D) ve kontrol bitleri (C) donanım şemalarına uygun şekilde etiketlenmiştir.
+* **Yapay Hata Enjeksiyonu:** Bellek arayüzü üzerindeki herhangi bir veri veya kontrol bitine tıklanarak elektriksel/donanımsal bozulmalar (Error Signal) manuel olarak simüle edilebilir.
+* **SEC (Single Error Correction):** Tek bitlik hatalar; Compare modülünde XOR mantığıyla hesaplanan "Sendrom Kelimesi" ile tespit edilir ve Corrector modülü tarafından orijinal haline döndürülür.
+* **Limit Kontrolü (Aliasing Koruması):** Standart Hamming kodunun matematiksel sınırlarını göstermek amacıyla, bellekte aynı anda birden fazla hata oluştuğunda sistem hatalı onarım yapmak yerine işlemi durdurarak kullanıcıyı uyarır.
 
-## 🎮 Nasıl Oynanır?
+## Kurulum ve Kullanım
 
-- Oyun yukarı saha ve sol yön tuşlarıyla oynanmaktadır.
-- Özel durumlarda space ile atlamak gerekmektedir.
-- Oynarken evrenin akış yönüne dikkat edilmesi gerekmektedir.
-- Oyun "esc" ile duraklatılabilmektedir.
+Proje herhangi bir sunucu kurulumu, paket yöneticisi veya derleyici gerektirmez. 
+Simülatörü çalıştırmak için tek yapmanız gereken `index.html` dosyasını modern bir web tarayıcısında açmaktır.
 
-## 🔊 Özellikler
+## Teknolojiler
 
-- Özel etkileşim ses efektleri
-- Arkaplan müziği
-- JavaScript ile oyun mekaniği
-- HTML5 Canvas kullanımı
-- Giderek bir noktaya kadar zorlaşan seviye sistemi
-
-## ▶️ Oynanış Videosu
-
-[Youtube Linki](https://youtu.be/CcdmYDDoaE4)
-
-## 📜 Credits
+* HTML5
+* CSS3 (Flexbox Layout)
+* Vanilla JavaScript
